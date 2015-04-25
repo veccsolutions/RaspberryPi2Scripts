@@ -11,7 +11,7 @@ mkdir mounts
 
 #copy the kernel, raspberry pi 2 uses kernel7.img
 echo Mounting pi boot
-sudo mount /dev/mmcblk0p1 mounts
+sudo mount /dev/${SDCARD}p1 mounts
 
 echo Copying the kernel
 sudo cp linux/arch/arm/boot/zImage mounts/kernel7.img
@@ -24,7 +24,7 @@ sudo umount mounts
 
 #copy the modules
 echo Mounting the pi drive
-sudo mount /dev/mmcblk0p2 mounts
+sudo mount /dev/${SDCARD}p2 mounts
 
 echo Copying the modules
 sudo rm -r -f mounts/lib/modules/*

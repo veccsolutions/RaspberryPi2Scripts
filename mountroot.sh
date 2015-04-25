@@ -8,4 +8,4 @@ source ${dir}/globalvariables.sh
 cd ${dir}/..
 
 echo Mounting the pi drive
-sudo mount /dev/mmcblk0p2 mounts
+sudo mount /dev/${SDCARD}p2 mounts

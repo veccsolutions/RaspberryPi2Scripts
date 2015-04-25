@@ -11,4 +11,4 @@ mkdir mounts
 
 #copy the kernel, raspberry pi 2 uses kernel7.img
 echo Mounting pi boot
-sudo mount /dev/mmcblk0p1 mounts
+sudo mount /dev/${SDCARD}p1 mounts
